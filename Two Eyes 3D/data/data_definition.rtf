@@ -1,0 +1,223 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww20640\viewh14240\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\b\fs24 \cf0 \ul \ulc0 JSON Data Structure\
+\
+
+\b0 \ulnone The base of the data is a Dictionary with three keys: 
+\b session_info
+\b0 , 
+\b spatial_questions
+\b0 , and 
+\b quiz_sessions
+\b0 . We'll go through each individually.\
+\
+
+\b Notes:\
+
+\b0 Test link for downloading completed sessions: https://.../list_results.php 
+\b <SCRIPT TO LIST UPLOADED DATA IS OPTIONAL>
+\b0 \
+Production link: https://.../list_results.php 
+\b <SCRIPT TO LIST UPLOADED DATA IS OPTIONAL>\
+
+\b0 All keys that end with 'index' mean they are zero-indexed. First selection is 0, second is 1, etc.\
+All arrays containing values related to coordinated, will contain their values in order of X, Y, and Z if there is a third. For drawing, acceleration, and attitude are examples.\
+\
+
+\b session_info 
+\b0 is a simple dictionary with no deeper data structures and contains universal information about the session. It's keys are the following:\
+\
+
+\b uuid 
+\b0 : String, the unique identifier of the session.\
+
+\b version 
+\b0 : String, the version number of the quiz used for this session.
+\b \
+start_time 
+\b0 : String, date time w/ timezone when the session began.
+\b \
+end_time 
+\b0 : String, date time w/ timezone when he session ended.
+\b \
+total_duration 
+\b0 : Float, in seconds, how long the session took.
+\b \
+sample_rate 
+\b0 : Float, the fraction for how often to sample. 0.033333 is 1/30 of a second sample rate.
+\b \
+movie_index 
+\b0 : Integer, movie selection.\
+
+\b quiz_key 
+\b0 : String, the key to the quiz is the quiz definition file.
+\b \
+type_index 
+\b0 : Integer, movie type (2D or 3D).
+\b \
+name 
+\b0 : String, name of the session taker.
+\b \
+email 
+\b0 : String, email of the session taker.\
+
+\b age 
+\b0 : Integer, age of the test taker.\
+
+\b gender_index 
+\b0 : Integer, gender selection.
+\b \
+difficulty_index 
+\b0 : Integer, difficulty with 3D selection.
+\b \
+knowledge_index 
+\b0 : Integer, astronomy knowledge selection.\
+\
+\
+
+\b spatial_session 
+\b0 is a Dictionary containing two keys.\
+\
+
+\b total_duration 
+\b0 : Float, in seconds, how long the spatial quiz takes.\
+
+\b spatial_questions 
+\b0 : Array, contains an ordered list of spatial question answers, each array value is a Dictionary defined as the following (* denotes the key may not exist):\
+	
+\b acceleration_data 
+\b0 : Array, contains arrays, one for each sample, which contains three Float values in the order of X, Y, and Z. Gravity has been removed from the reading so if the device is stationary, the values should be close to 0 (though will never be exactly 0).\
+	
+\b attitude_data 
+\b0 : Array, contains arrays, one for each sample, which contains three Float values in the order of X, Y, and Z. This is the orientation of the device.\
+	
+\b answer_index 
+\b0 : Integer, answer selection.\
+	
+\b question_index 
+\b0 : Integer, question number (zero indexed). Should match the index of the array this spatial question result is contained in.\
+	
+\b start_time 
+\b0 : String, date time w/ timezone when the session began.\
+	
+\b end_time 
+\b0 : String, date time w/ timezone when he session ended.\
+	
+\b duration 
+\b0 :  Float, in seconds, how long the spatial quiz took.\
+	
+\b has_explanation 
+\b0 : Boolean, indicates if the explanation key exists.\
+	
+\b explanation 
+\b0 : *String, value of the explanation field the user edited.\
+	
+\b type 
+\b0 : String, for spatial should always be "radio_image" (other values are "radio_text" and "drawing" but are only used in the quiz_questions).\
+\
+
+\b \
+quiz_sessions 
+\b0 is an Array of Dictionaries, each Dictionary being another round of the quiz being taken. It is in order of rounds.\
+\
+
+\b 	total_duration 
+\b0 : Float, in seconds, how long the spatial quiz takes.
+\b \
+	quiz_questions 
+\b0 : Array, contains an ordered list of quiz question answer, each array value is a Dictionary.\
+		
+\i\b If the type is "radio_image" or "radio_text" it is defined as the following:
+\i0\b0 \
+		
+\b acceleration_data 
+\b0 : Array, contains arrays, one for each sample, which contains three Float values in the order of X, Y, and Z. Gravity has been removed from the reading so if the device is stationary, the values should be close to 0 (though will never be exactly 0).\
+		
+\b attitude_data 
+\b0 : Array, contains arrays, one for each sample, which contains three Float values in the order of X, Y, and Z. This is the orientation of the device.\
+		
+\b answer_index 
+\b0 : Integer, answer selection.\
+		
+\b question_index 
+\b0 : Integer, question number (zero indexed). Should match the index of the array this spatial question result is contained in.\
+		
+\b start_time 
+\b0 : String, date time w/ timezone when the session began.\
+		
+\b end_time 
+\b0 : String, date time w/ timezone when he session ended.\
+		
+\b duration 
+\b0 :  Float, in seconds, how long the spatial quiz took.\
+		
+\b has_explanation 
+\b0 : Boolean, indicates if the explanation key exists.\
+		
+\b explanation 
+\b0 : *String, value of the explanation field the user edited.\
+		
+\b type 
+\b0 : String, will either equal "radio_image", "radio_text", or "drawing" to denote the type of question it was.\
+		
+\b round
+\b0  : Integer, the round of quiz taking this was. NOT zero indexed. Round one is 1, two is 2.\
+\
+		
+\i\b If the type is "drawing" it is defined as the following:
+\i0\b0 \
+		
+\b acceleration_data 
+\b0 : Array, contains arrays, one for each sample, which contains three Float values in the order of X, Y, and Z. Gravity has been removed from the reading so if the device is stationary, the values should be close to 0 (though will never be exactly 0).\
+		
+\b attitude_data 
+\b0 : Array, contains arrays, one for each sample, which contains three Float values in the order of X, Y, and Z. This is the orientation of the device.\
+		
+\b question_index 
+\b0 : Integer, question number (zero indexed). Should match the index of the array this spatial question result is contained in.\
+		
+\b start_time 
+\b0 : String, date time w/ timezone when the session began.\
+		
+\b end_time 
+\b0 : String, date time w/ timezone when he session ended.\
+		
+\b duration 
+\b0 :  Float, in seconds, how long the spatial quiz took.\
+		
+\b has_explanation 
+\b0 : Boolean, indicates if the explanation key exists.\
+		
+\b explanation 
+\b0 : *String, value of the explanation field the user edited.\
+		
+\b type 
+\b0 : String, will either equal "radio_image", "radio_text", or "drawing" to denote the type of question it was.\
+		
+\b round
+\b0  : Integer, the round of quiz taking this was. NOT zero indexed. Round one is 1, two is 2.\
+		
+\b image_file
+\b0  : String, the filename of the image drawn that was bundled along with the data.json this value is contained in.\
+		
+\b drawing_data
+\b0  : Array, of Dictionaries. This is a recording of the drawing the user made. It is NOT time based, but contains all points both drawn, erased, and labels made in order that would allow recreating the image (like a VCR, drawing, then erasing over, etc). Each Dictionary in the Array has one of three keys with the following structure:\
+			
+\b drawn
+\b0  : Array, of Arrays. Each Array contained has two values defining a point in a line drawn in order X, Y.\
+			
+\b erased 
+\b0 : Array, of Arrays. Each Array contained has two values defining a point in an eraser line in order X, Y.\
+			
+\b label 
+\b0 : Dictionary, contains the label text and the origin of the label as follows:\
+				
+\b text 
+\b0 : String, the text the user input.\
+				
+\b origin 
+\b0 : Array, contains two values indication the origin of the label in order X, Y.}

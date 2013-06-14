@@ -1,0 +1,557 @@
+{
+    "version": "2.0",
+    "date": "04-24-2013",
+    "setup": {
+        "sample_rate": 0.033333,
+        "movies": [
+            {
+                "name": "The Great Pinwheel Supernova",
+                "quiz_key": "supernova_quiz",
+                "length": 300
+            },
+            {
+                "name": "Shape of the Milky Way",
+                "quiz_key": "galaxy_quiz",
+                "length": 300
+            }
+        ],
+        "types": [
+            "2D",
+            "3D"
+        ]
+    },
+    "spatial_quiz": {
+        "time_limit": 360,
+        "questions": [
+            {
+                "question_image": "SpatialQ1.png",
+                "question_x": 88,
+                "question_y": 138,
+                "question_type": "radio_image",
+                "include_explain": 0,
+                "radio_setup": {
+                    "type": "image",
+                    "radio_position": "bottom",
+                    "radio_distance": 10,
+                    "item_layout": "horizontal",
+                    "item_buffer": 40,
+                    "items_until_wrapping": 0,
+                    "max_item_width": 200,
+                    "max_item_height": 135,
+                    "x": 118,
+                    "y": 454
+                },
+                "radio_items": [
+                    {
+                        "image": "SpatialQ1A1.png",
+                        "has_caption": 0
+                    },
+                    {
+                        "image": "SpatialQ1A2.png",
+                        "has_caption": 0
+                    },
+                    {
+                        "image": "SpatialQ1A3.png",
+                        "has_caption": 0
+                    },
+                    {
+                        "image": "SpatialQ1A4.png",
+                        "has_caption": 0
+                    },
+                    {
+                        "image": "SpatialQ1A5.png",
+                        "has_caption": 0
+                    }
+                ]
+            },
+            {
+                "question_image": "SpatialQ2.png",
+                "question_x": 88,
+                "question_y": 138,
+                "question_type": "radio_image",
+                "include_explain": 0,
+                "radio_setup": {
+                    "type": "image",
+                    "radio_position": "bottom",
+                    "radio_distance": 10,
+                    "item_layout": "horizontal",
+                    "item_buffer": 40,
+                    "items_until_wrapping": 0,
+                    "max_item_width": 200,
+                    "max_item_height": 135,
+                    "x": 118,
+                    "y": 454
+                },
+                "radio_items": [
+                    {
+                        "image": "SpatialQ2A1.png",
+                        "has_caption": 0
+                    },
+                    {
+                        "image": "SpatialQ2A2.png",
+                        "has_caption": 0
+                    },
+                    {
+                        "image": "SpatialQ2A3.png",
+                        "has_caption": 0
+                    },
+                    {
+                        "image": "SpatialQ2A4.png",
+                        "has_caption": 0
+                    },
+                    {
+                        "image": "SpatialQ2A5.png",
+                        "has_caption": 0
+                    }
+                ]
+            },
+            {
+                "question_image": "SpatialQ3.png",
+                "question_x": 88,
+                "question_y": 138,
+                "question_type": "radio_image",
+                "include_explain": 0,
+                "radio_setup": {
+                    "type": "image",
+                    "radio_position": "bottom",
+                    "radio_distance": 10,
+                    "item_layout": "horizontal",
+                    "item_buffer": 40,
+                    "items_until_wrapping": 0,
+                    "max_item_width": 200,
+                    "max_item_height": 135,
+                    "x": 118,
+                    "y": 454
+                },
+                "radio_items": [
+                    {
+                        "image": "SpatialQ3A1.png",
+                        "has_caption": 0
+                    },
+                    {
+                        "image": "SpatialQ3A2.png",
+                        "has_caption": 0
+                    },
+                    {
+                        "image": "SpatialQ3A3.png",
+                        "has_caption": 0
+                    },
+                    {
+                        "image": "SpatialQ3A4.png",
+                        "has_caption": 0
+                    },
+                    {
+                        "image": "SpatialQ3A5.png",
+                        "has_caption": 0
+                    }
+                ]
+            },
+            {
+                "question_image": "SpatialQ4.png",
+                "question_x": 88,
+                "question_y": 138,
+                "question_type": "radio_image",
+                "include_explain": 0,
+                "radio_setup": {
+                    "type": "image",
+                    "radio_position": "bottom",
+                    "radio_distance": 10,
+                    "item_layout": "horizontal",
+                    "item_buffer": 40,
+                    "items_until_wrapping": 0,
+                    "max_item_width": 200,
+                    "max_item_height": 135,
+                    "x": 118,
+                    "y": 454
+                },
+                "radio_items": [
+                    {
+                        "image": "SpatialQ4A1.png",
+                        "has_caption": 0
+                    },
+                    {
+                        "image": "SpatialQ4A2.png",
+                        "has_caption": 0
+                    },
+                    {
+                        "image": "SpatialQ4A3.png",
+                        "has_caption": 0
+                    },
+                    {
+                        "image": "SpatialQ4A4.png",
+                        "has_caption": 0
+                    },
+                    {
+                        "image": "SpatialQ4A5.png",
+                        "has_caption": 0
+                    }
+                ]
+            },
+            {
+                "question_image": "SpatialQ5.png",
+                "question_x": 88,
+                "question_y": 138,
+                "question_type": "radio_image",
+                "include_explain": 0,
+                "radio_setup": {
+                    "type": "image",
+                    "radio_position": "bottom",
+                    "radio_distance": 10,
+                    "item_layout": "horizontal",
+                    "item_buffer": 40,
+                    "items_until_wrapping": 0,
+                    "max_item_width": 200,
+                    "max_item_height": 135,
+                    "x": 118,
+                    "y": 454
+                },
+                "radio_items": [
+                    {
+                        "image": "SpatialQ5A1.png",
+                        "has_caption": 0
+                    },
+                    {
+                        "image": "SpatialQ5A2.png",
+                        "has_caption": 0
+                    },
+                    {
+                        "image": "SpatialQ5A3.png",
+                        "has_caption": 0
+                    },
+                    {
+                        "image": "SpatialQ5A4.png",
+                        "has_caption": 0
+                    },
+                    {
+                        "image": "SpatialQ5A5.png",
+                        "has_caption": 0
+                    }
+                ]
+            }
+        ]
+    },
+    "supernova_quiz": {
+        "questions": [
+            {
+                "question_text": "In 2011, astronomers detected a new light source in the sky caused by two white dwarf stars merging 21 million light years away. If viewed from earth, which of the following images represents a similarly new light source? Select one image by touching it.",
+                "question_type": "radio_image",
+                "include_explain": 0,
+                "attribution": "Milky Way background photograph courtesy Luis Argerich.",
+                "radio_setup": {
+                    "type": "image",
+                    "font_name": "HelveticaNeue-Italic",
+                    "font_size": 14,
+                    "text_color": "0x898989ff",
+                    "radio_position": "bottom",
+                    "radio_distance": 10,
+                    "item_layout": "horizontal",
+                    "item_buffer": 16,
+                    "items_until_wrapping": 0,
+                    "max_item_width": 200,
+                    "max_item_height": 185,
+                    "x": 88,
+                    "y": 236
+                },
+                "radio_items": [
+                    {
+                        "image": "GalaxyItem1.png",
+                        "has_caption": 1,
+                        "caption": "Single diffused and faint light star (hazy but diffused like remote galaxy)"
+                    },
+                    {
+                        "image": "GalaxyItem2.png",
+                        "has_caption": 1,
+                        "caption": "Single star with medium luminosity in the night sky"
+                    },
+                    {
+                        "image": "GalaxyItem3.png",
+                        "has_caption": 1,
+                        "caption": "Two medium intensity stars close by each other in the night sky"
+                    },
+                    {
+                        "image": "GalaxyItem4.png",
+                        "has_caption": 1,
+                        "caption": "Two stars, one bright and one faint, close by each other in the night sky"
+                    }
+                ]
+            },
+            {
+                "question_text": "How confident are you about your choice?",
+                "question_type": "radio_text",
+                "include_explain": 0,
+                "radio_setup": {
+                    "type": "text",
+                    "font_name": "HelveticaNeue-Light",
+                    "font_size": 28,
+                    "text_color": "0x000000ff",
+                    "radio_position": "left",
+                    "radio_distance": 10,
+                    "item_layout": "vertical",
+                    "item_buffer": 20,
+                    "items_until_wrap": 0,
+                    "max_item_width": 800,
+                    "max_item_height": 150,
+                    "x": 88,
+                    "y": 190
+                },
+                "radio_items": [
+                    "Very confident",
+                    "Somewhat confident",
+                    "Not at all confident"
+                ]
+            },
+            {
+                "question_text": "In a Type-1a Supernova...",
+                "question_type": "radio_text",
+                "include_explain": 0,
+                "radio_setup": {
+                    "type": "text",
+                    "font_name": "HelveticaNeue-Light",
+                    "font_size": 28,
+                    "text_color": "0x000000ff",
+                    "radio_position": "left",
+                    "radio_distance": 10,
+                    "item_layout": "vertical",
+                    "item_buffer": 20,
+                    "items_until_wrap": 0,
+                    "max_item_width": 800,
+                    "max_item_height": 150,
+                    "x": 88,
+                    "y": 190
+                },
+                "radio_items": [
+                    "Both stars are exploding",
+                    "One star is exploding while the other is not",
+                    "Neither star is exploding"
+                ]
+            },
+            {
+                "question_text": "In a Type-1a Supernova...",
+                "question_type": "radio_text",
+                "include_explain": 0,
+                "radio_setup": {
+                    "type": "text",
+                    "font_name": "HelveticaNeue-Light",
+                    "font_size": 28,
+                    "text_color": "0x000000ff",
+                    "radio_position": "left",
+                    "radio_distance": 10,
+                    "item_layout": "vertical",
+                    "item_buffer": 20,
+                    "items_until_wrap": 0,
+                    "max_item_width": 800,
+                    "max_item_height": 150,
+                    "x": 88,
+                    "y": 190
+                },
+                "radio_items": [
+                    "Two stars merge",
+                    "Some material from one star is taken away by the other star, but they do not merge",
+                    "There are two stars, but they do not exchange material with each other",
+                    "There is only one star in the system"
+                ]
+            },
+            {
+                "question_text": "In a Type-1a Supernova...",
+                "question_type": "radio_text",
+                "include_explain": 0,
+                "radio_setup": {
+                    "type": "text",
+                    "font_name": "HelveticaNeue-Light",
+                    "font_size": 28,
+                    "text_color": "0x000000ff",
+                    "radio_position": "left",
+                    "radio_distance": 10,
+                    "item_layout": "vertical",
+                    "item_buffer": 20,
+                    "items_until_wrap": 0,
+                    "max_item_width": 800,
+                    "max_item_height": 150,
+                    "x": 88,
+                    "y": 190
+                },
+                "radio_items": [
+                    "From Earth, we can see two separate stars in the supernova system",
+                    "There are two separate stars in the supernova system, but they are too far away to be seen as separate stars from Earth",
+                    "There is only one star in the system"
+                ]
+            },
+            {
+                "question_text": "Using your fingers or the pen, draw the moment when two white dwarfs collide. Label your picture.",
+                "question_type": "drawing",
+                "include_explain": 0,
+                "drawing_setup": {
+                    "background_color": "0xffffffff",
+                    "pen_drawing_color": "0x999999ff",
+                    "pen_color": "0x000000ff",
+                    "label_text_color": "0x999999ff",
+                    "label_back_color": "0xffffffff",
+                    "pen_radius": 8,
+                    "eraser_radius": 15,
+                    "x": 87,
+                    "y": 188
+                }
+            }
+        ]
+    },
+    "galaxy_quiz": {
+        "questions": [
+            {
+                "question_text": "The Milky Way is the name of the galaxy in which we live. Which of the following images would most closely resemble the Milky Way galaxy as seen from the outside of our own galaxy?",
+                "question_type": "radio_image",
+                "include_explain": 0,
+                "attribution": "Images from Wikimedia Commons and Adler Planetarium.",
+                "radio_setup": {
+                    "type": "image",
+                    "font_name": "HelveticaNeue-Italic",
+                    "font_size": 14,
+                    "text_color": "0x898989ff",
+                    "radio_position": "bottom",
+                    "radio_distance": 10,
+                    "item_layout": "horizontal",
+                    "item_buffer": 16,
+                    "items_until_wrapping": 0,
+                    "max_item_width": 200,
+                    "max_item_height": 185,
+                    "x": 88,
+                    "y": 236
+                },
+                "radio_items": [
+                    {
+                        "image": "MilkyItem1.jpg",
+                        "has_caption": 0
+                    },
+                    {
+                        "image": "MilkyItem2.jpg",
+                        "has_caption": 0
+                    },
+                    {
+                        "image": "MilkyItem3.jpg",
+                        "has_caption": 0
+                    },
+                    {
+                        "image": "MilkyItem4.jpg",
+                        "has_caption": 0
+                    }
+                ]
+            },
+            {
+                "question_text": "How confident are you about your choice in Question 1?",
+                "question_type": "radio_text",
+                "include_explain": 0,
+                "radio_setup": {
+                    "type": "text",
+                    "font_name": "HelveticaNeue-Light",
+                    "font_size": 28,
+                    "text_color": "0x000000ff",
+                    "radio_position": "left",
+                    "radio_distance": 10,
+                    "item_layout": "vertical",
+                    "item_buffer": 20,
+                    "items_until_wrap": 0,
+                    "max_item_width": 800,
+                    "max_item_height": 150,
+                    "x": 88,
+                    "y": 190
+                },
+                "radio_items": [
+                    "Very confident",
+                    "Somewhat confident",
+                    "Not at all confident"
+                ]
+            },
+            {
+                "question_text": "In 1750, a notable astronomer modeled that the stars in our Milky Way galaxy were distributed as if they were on the surfaces of many spheres. What was he trying to explain?",
+                "question_type": "radio_text",
+                "include_explain": 0,
+                "radio_setup": {
+                    "type": "text",
+                    "font_name": "HelveticaNeue-Light",
+                    "font_size": 28,
+                    "text_color": "0x000000ff",
+                    "radio_position": "left",
+                    "radio_distance": 10,
+                    "item_layout": "vertical",
+                    "item_buffer": 20,
+                    "items_until_wrap": 0,
+                    "max_item_width": 800,
+                    "max_item_height": 150,
+                    "x": 88,
+                    "y": 190
+                },
+                "radio_items": [
+                    "Why a large band of stars stretches across the sky.",
+                    "Why some star patterns in the sky look like spheres.",
+                    "Why some star patterns looked like reflections of objects on the Earth."
+                ]
+            },
+            {
+                "question_text": "When the Milky Way galaxy engulfs a smaller galaxy, the stars from the smaller galaxy...",
+                "question_type": "radio_text",
+                "include_explain": 0,
+                "radio_setup": {
+                    "type": "text",
+                    "font_name": "HelveticaNeue-Light",
+                    "font_size": 28,
+                    "text_color": "0x000000ff",
+                    "radio_position": "left",
+                    "radio_distance": 10,
+                    "item_layout": "vertical",
+                    "item_buffer": 20,
+                    "items_until_wrap": 0,
+                    "max_item_width": 800,
+                    "max_item_height": 150,
+                    "x": 88,
+                    "y": 190
+                },
+                "radio_items": [
+                    "Collide with each other and explode, leaving behind only dust bands.",
+                    "Are stretched into bands that form new parts of the Milky Way.",
+                    "Are slowly pulled into the Milky Way, leaving behind no trace of the galaxy’s prior existence.",
+                    "Form a sphere that can be seen in the night sky as a band of stars."
+                ]
+            },
+            {
+                "question_text": "How many stars are in our Milky Way Galaxy?",
+                "question_type": "radio_text",
+                "include_explain": 0,
+                "radio_setup": {
+                    "type": "text",
+                    "font_name": "HelveticaNeue-Light",
+                    "font_size": 28,
+                    "text_color": "0x000000ff",
+                    "radio_position": "left",
+                    "radio_distance": 10,
+                    "item_layout": "vertical",
+                    "item_buffer": 20,
+                    "items_until_wrap": 0,
+                    "max_item_width": 800,
+                    "max_item_height": 150,
+                    "x": 88,
+                    "y": 190
+                },
+                "radio_items": [
+                    "Hundreds of thousands of stars (100,000+)",
+                    "Hundreds of millions of stars (100,000,000+)",
+                    "Hundreds of billions of stars (100,000,000,000+)"
+                ]
+            },
+            {
+                "question_text": "Draw what the Milky Way galaxy looks like from the top and from the side. Indicate the approximated location of the Sun in your drawings. Label any parts you can identify.",
+                "question_type": "drawing",
+                "include_explain": 0,
+                "drawing_setup": {
+                    "background_color": "0xffffffff",
+                    "pen_drawing_color": "0x999999ff",
+                    "pen_color": "0x000000ff",
+                    "label_text_color": "0x999999ff",
+                    "label_back_color": "0xffffffff",
+                    "pen_radius": 8,
+                    "eraser_radius": 15,
+                    "x": 87,
+                    "y": 188
+                }
+            }
+        ]
+    }
+}
