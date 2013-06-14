@@ -8,6 +8,17 @@ Introduction
 Two Eyes, 3D is software for creating quizzes that capture user
 input as well as timing data, and motion data.
 
+Background
+----------
+
+This software was created as part of a project supported by the 
+National Science Foundation through an award to the American 
+Association of Variable Star Observers (DRL#1114645). The software 
+was used as part of a science education research project involving 
+the use of stereoscopic visualizations in museum settings. More 
+details are available at www.twoeyes3d.org. 
+
+
 
 What is contained here
 ----------------------
@@ -50,3 +61,4 @@ Compatibility
 -------------
 
 Version 1.1.0 has been tested with iOS from 5.1 to 6.1.
+
