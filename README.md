@@ -16,8 +16,10 @@ National Science Foundation through an award to the American
 Association of Variable Star Observers (DRL#1114645). The software 
 was used as part of a science education research project involving 
 the use of stereoscopic visualizations in museum settings. More 
-details are available at www.twoeyes3d.org. 
+details on the project itself are available at www.twoeyes3d.org. 
+More details about this app are here:
 
+http://www.twoeyes3d.org/post/53409857492/2i3d-ipad-software-released-into-public-domain
 
 
 What is contained here
